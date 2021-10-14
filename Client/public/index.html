@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 >Remote Linux Execution</h1>
+        <div>
+            <form id="init-form">
+                <input id="remoteHost" placeholder="Remote Server IP"><br>
+                <input id="username" placeholder="User Name"><br>
+                <input id="password" placeholder="Password"><br>
+                <input id="command" placeholder="Command"><br>
+                <button id="connect-btn">execut</button>
+                <br>
+                <br>
+            </form>
+        </div>
+        <form id="prompt-form">
+            <input id="prompt-text" placeholder="prompt">
+            <button id="send-prompt">Send Prompt</button>
+        </form>
+        <textarea id="textarea" rows="20" cols="100"></textarea>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/chat.js"></script>
+    </body>
+</html>
